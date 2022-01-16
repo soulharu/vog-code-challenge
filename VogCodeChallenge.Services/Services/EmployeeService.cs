@@ -24,5 +24,10 @@ namespace VogCodeChallenge.Services.Services
         {
             return _dataSupplier.GetEmployees();
         }
+
+        public IEnumerable<Employee> GetByDepartment(long departmentId)
+        {
+            return _dataSupplier.GetEmployeesByDepartment(departmentId);
+        }
     }
 }

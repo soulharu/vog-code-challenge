@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using VogCodeChallenge.Domain.Models;
+using System.Linq;
 
 namespace VogCodeChallenge.Infrastructure
 {
@@ -36,5 +37,10 @@ namespace VogCodeChallenge.Infrastructure
                 }
             };
         }
-    }
+
+        public List<Employee> GetEmployeesByDepartment(long deparmentId)
+        {
+            return GetEmployees().Where(e => e.DepartmentId == deparmentId).ToList();
+        }
+    }    
 }

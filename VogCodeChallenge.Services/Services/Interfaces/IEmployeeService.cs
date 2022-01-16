@@ -7,5 +7,6 @@ namespace VogCodeChallenge.Services.Services.Interfaces
     {
         IEnumerable<Employee> GetAll();
         IList<Employee> ListAll();
+        IEnumerable<Employee> GetByDepartment(long departmentId);
     }
 }
