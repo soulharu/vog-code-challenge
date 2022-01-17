@@ -13,8 +13,8 @@ namespace VogCodeChallenge.Infrastructure.DB.Repositories
 {
     public class EmployeesRepository : IEmployeesRepository
     {
-        private IConnectionFactory _connectionFactory;
-        private ILogger<EmployeesRepository> _logger;
+        private readonly IConnectionFactory _connectionFactory;
+        private readonly ILogger<EmployeesRepository> _logger;
 
         public EmployeesRepository(IConnectionFactory connectionFactory, ILogger<EmployeesRepository> logger)
         {
@@ -30,12 +30,10 @@ namespace VogCodeChallenge.Infrastructure.DB.Repositories
             {
                 var sqlCommand = "SELECT * FROM dbo.Employees";
 
-                using (var db = _connectionFactory.Get(ConnectionNames.ApplicationSQL))
-                {
-                    var result = await db.QueryAsync<Employee>(sql: sqlCommand, commandType: CommandType.Text);
-                    employees = result.ToList();
-                }
-                
+                using var db = _connectionFactory.Get(ConnectionNames.ApplicationSQL);
+                var result = await db.QueryAsync<Employee>(sql: sqlCommand, commandType: CommandType.Text);
+                employees = result.ToList();
+
             }
             catch (Exception ex)
             {
@@ -56,11 +54,9 @@ namespace VogCodeChallenge.Infrastructure.DB.Repositories
                 var parameters = new DynamicParameters();
                 parameters.Add("@departmentId", departmentId, DbType.Int64);
 
-                using (var db = _connectionFactory.Get(ConnectionNames.ApplicationSQL))
-                {
-                    var result = await db.QueryAsync<Employee>(sql: sqlCommand, param: parameters, commandType: CommandType.Text);
-                    employees = result.ToList();
-                }
+                using var db = _connectionFactory.Get(ConnectionNames.ApplicationSQL);
+                var result = await db.QueryAsync<Employee>(sql: sqlCommand, param: parameters, commandType: CommandType.Text);
+                employees = result.ToList();
 
             }
             catch (Exception ex)
