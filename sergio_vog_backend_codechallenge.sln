@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.API", "VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{12F7BF2E-D557-4090-B7A7-FA732976BAD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.API", "VogCodeChallenge.API\VogCodeChallenge.API.csproj", "{12F7BF2E-D557-4090-B7A7-FA732976BAD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Domain", "VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj", "{436845D3-D6E3-4AB0-BE62-849D497C2DFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Domain", "VogCodeChallenge.Domain\VogCodeChallenge.Domain.csproj", "{436845D3-D6E3-4AB0-BE62-849D497C2DFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Services", "VogCodeChallenge.Services\VogCodeChallenge.Services.csproj", "{FD21B44E-E7C4-499B-81DD-E4650084FDA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Services", "VogCodeChallenge.Services\VogCodeChallenge.Services.csproj", "{FD21B44E-E7C4-499B-81DD-E4650084FDA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.Infrastructure", "VogCodeChallenge.Infrastructure\VogCodeChallenge.Infrastructure.csproj", "{E38CA1F9-A9DB-4E46-815A-052EF62C0E91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Infrastructure", "VogCodeChallenge.Infrastructure\VogCodeChallenge.Infrastructure.csproj", "{E38CA1F9-A9DB-4E46-815A-052EF62C0E91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{E05802E2-430B-45F3-8194-BC4510122163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.ConsoleApp", "VogCodeChallenge.ConsoleApp\VogCodeChallenge.ConsoleApp.csproj", "{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{E38CA1F9-A9DB-4E46-815A-052EF62C0E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E38CA1F9-A9DB-4E46-815A-052EF62C0E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E38CA1F9-A9DB-4E46-815A-052EF62C0E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233} = {E05802E2-430B-45F3-8194-BC4510122163}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E5DEDE8-A966-40D4-854B-06FD8DC4E636}
