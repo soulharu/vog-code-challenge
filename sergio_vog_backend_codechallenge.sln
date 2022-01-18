@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.Infrastruc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{E05802E2-430B-45F3-8194-BC4510122163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VogCodeChallenge.ConsoleApp", "VogCodeChallenge.ConsoleApp\VogCodeChallenge.ConsoleApp.csproj", "{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.ConsoleApp", "VogCodeChallenge.ConsoleApp\VogCodeChallenge.ConsoleApp.csproj", "{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWS", "AWS", "{C536FFF2-5B6F-4AFE-98A1-F8AD424C3FD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VogCodeChallenge.AWSLambda", "VogCodeChallenge.AWSLambda\VogCodeChallenge.AWSLambda.csproj", "{9862D67D-56D8-4328-A80D-C68128E5D1CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +45,17 @@ Global
 		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9862D67D-56D8-4328-A80D-C68128E5D1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9862D67D-56D8-4328-A80D-C68128E5D1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9862D67D-56D8-4328-A80D-C68128E5D1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9862D67D-56D8-4328-A80D-C68128E5D1CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7ED6EBCB-FDCD-445D-9CF1-8CE8092A2233} = {E05802E2-430B-45F3-8194-BC4510122163}
+		{9862D67D-56D8-4328-A80D-C68128E5D1CC} = {C536FFF2-5B6F-4AFE-98A1-F8AD424C3FD9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E5DEDE8-A966-40D4-854B-06FD8DC4E636}
